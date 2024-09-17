@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Button, Container, Dialog, DialogContent, DialogTitle, Divider, Grid2, Typography, IconButton } from '@mui/material';
 import WebinarList from './components/WebinarList';
 import SearchBar from './components/SearchBar';
@@ -45,6 +45,11 @@ const App = () => {
   )
   .filter((webinar) => (topicFilter ? webinar.topics === topicFilter : true));
 
+  const uniqueTopics = useMemo(() => {
+    const topicsSet = new Set(webinars.map(webinar => webinar.topics).filter(Boolean));
+    return Array.from(topicsSet);
+  }, [webinars]);
+
   return (
     <Container sx={{ marginTop: 4 }}>
       <Grid2 container spacing={2} alignItems="center" justifyContent="space-between">
@@ -61,7 +66,7 @@ const App = () => {
           <SearchBar setSearchTerm={setSearchTerm} />
         </Grid2>
         <Grid2 sx={{width: '9rem'}} item xs={6}>
-          <TopicFilter setTopicFilter={setTopicFilter} />
+          <TopicFilter topics={uniqueTopics} setTopicFilter={setTopicFilter} />
         </Grid2>
       </Grid2>
 
