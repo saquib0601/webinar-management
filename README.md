@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Webinar Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a **Webinar Management Application** built using **React** and **Material-UI (MUI)**. The application allows users to manage webinars by adding, editing, deleting, and searching for webinars. It also provides filtering functionality based on topics and displays the webinars in a responsive card layout.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Create Webinar**: Add new webinars via a popup form with form validation.
+- **Edit Webinar**: Edit an existing webinar, with a popup pre-filled with webinar details.
+- **Delete Webinar**: Remove a webinar from the list.
+- **Search Webinars**: Search webinars by name, instructor, and other details.
+- **Filter Webinars**: Filter webinars by topics.
+- **Responsive Design**: The UI is responsive and adapts to different screen sizes.
+  
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: JavaScript library for building user interfaces.
+- **Material-UI (MUI)**: UI component library for implementing Material Design in React.
+- **Date-fns**: Utility library for date manipulation.
+- **React Hooks**: Used for managing state and side effects.
+  
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `src/components/`: Contains all the React components, including forms and webinar cards.
+- `src/App.js`: The main entry point of the app.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### To get started with the project, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/saquib0601/webinar-management.git
+   cd webinar-management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**:
+    ```bash
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Run the app**:
+    ```bash
+    npm start
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app is deployed and can be accessed at [].
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Functionality Overview
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Adding a Webinar
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Click on the Add Webinar button to open the popup form.
+2. Fill in the required fields such as Instructor Name, Role, Company, Topics, Webinar Title,   Start Date, Start Time, and End Time.
+3. Click Create Webinar to add it to the homepage list, or click Cancel to reset the form and close the popup.
 
-## Learn More
+### Editing a Webinar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Click on the Edit button on any webinar card.
+2. The popup form will appear with the existing details pre-filled.
+3. Modify the fields as needed and click Save Changes to update the webinar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deleting a Webinar
 
-### Code Splitting
+1. Click the Delete button on the webinar card.
+2. The webinar will be immediately removed from the list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Searching for Webinars
 
-### Analyzing the Bundle Size
+1. Use the search bar to filter webinars by matching text within any of the card details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Filtering by Topic
 
-### Making a Progressive Web App
+1. Select a topic from the dropdown to filter webinars based on the available topics.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+- For any questions or suggestions, feel free to connect with me.
