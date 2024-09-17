@@ -45,7 +45,7 @@ This is a **Webinar Management Application** built using **React** and **Materia
 
 ## Deployment
 
-The app is deployed and can be accessed at [].
+The app is deployed and can be accessed at [https://webinar-management.vercel.app/].
 
 ## Functionality Overview
 

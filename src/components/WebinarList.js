@@ -7,6 +7,28 @@ const WebinarList = ({ webinars, handleEdit, handleDelete }) => {
     return colors[index % colors.length];
   };
 
+    if (webinars.length === 0) {
+        return (
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '50vh',
+              textAlign: 'center',
+            }}
+          >
+            <Typography variant="h5" gutterBottom>
+              No Webinars Available
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 3 }}>
+              Please add a webinar to get started!
+            </Typography>
+          </Box>
+        );
+      }
+
   return (
     <Grid2 container spacing={3}>
       {webinars.map((webinar, index) => (
